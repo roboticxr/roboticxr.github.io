@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+<title>Assignment</title>
+</head>
+<body>
+
+<div class="about-section">
+  <h1>About Us</h1>
+  <p>Welcome to Basic Company,where basic is everything</p><br>
+  
+  <p>We do everything that sounds basic to you</p>
+</div>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="images/fikri.jpg" width="540" height="540" alt="fikri">
+      <div class="container">
+        <h2>Fikuri San</h2>
+        <p class="title">Tidur punya karaja</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>manabulikasitau@gmail.com</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="images/b0tak.jpg" width="480" height="640" alt="b0tak">
+      <div class="container">
+        <h2>Idola PUBGMalaysia Angkol B0tak</h2>
+        <p class="title">Gamer</p>
+        <p>Orangnya dlu pro tapi sekarang hmmmmm..begitu ja la</p> 
+        <p>nantikaukasitaupulis@gmail.com</p>
+        <form action="https://www.instagram.com/tv/CHq2sItJDze/">
+    <input type="submit" value="Video urg sampin" />
+</form>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="images/gaming.jpg" width="580" height="580" alt="gaming">
+      <div class="container">
+        <h2>Streamer Berjaya B0tak Gaming</h2>
+        <p class="title">Streamer</p>
+        <p>Walaupun dia sudah tidak stream,hati gamer tetap ada cuk</p>
+        <p>laridulubabai@gmail.com</p>
+        <form action="  https://www.facebook.com/AngkolB0tak">
+    <input type="submit" value="Page Streamer nda berjaya" />
+</form>
+      </div>
+    </div>
+  </div>
+</div>
+ <a href="index.html">"Back to Homepage"
+</a>
+
+</body>
+</html>
