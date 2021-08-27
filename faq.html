@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>What's up? FAQ PAGE</title>
+  
+  <!-- jQuery -->
+  <script type="text/javascript" src="//code.jquery.com/jquery-3.6.0.min.js"></script>
+  
+  <script>
+ $(document).ready(function() {
+ 
+    $('.faq_question').click(function() {
+ 
+        if ($(this).parent().is('.open')){
+            $(this).closest('.faq').find('.faq_answer_container').animate({'height':'0'},500);
+            $(this).closest('.faq').removeClass('open');
+ 
+            }else{
+                var newHeight =$(this).closest('.faq').find('.faq_answer').height() +'px';
+                $(this).closest('.faq').find('.faq_answer_container').animate({'height':newHeight},500);
+                $(this).closest('.faq').addClass('open');
+            }
+    });
+});
+</script>
+  
+<!-- CSS -->
+<style>
+ 
+/*FAQS*/
+.faq_question {
+    margin: 0px;
+    padding: 0px 0px 5px 0px;
+    display: inline-block;
+    cursor: pointer;
+    font-weight: bold;
+}
+ 
+.faq_answer_container {
+    height: 0px;
+    overflow: hidden;
+    padding: 0px;
+}
+.faq_container h1 {
+  color: pink;
+  font-size: 14px;
+}
+.faq_container h2 {
+  color: #00FFFF;
+  font-size: 14px;
+}
+body {
+	background-image: url(images/faq.png);
+}
+</style>
+  
+</head>
+<body>
+
+   <!-- HTML -->
+   
+   <div class="faq_container">
+    <div class="faq">
+    <h2>  <div class="faq_question">Brapa umur saya</div> </h2>
+    
+      <h1><div class="faq_answer_container">
+               <div class="faq_answer">21</div>
+            </div></h1>
+       <h2> <div class="faq_question">Suka makan apa</div></h2>
+        
+            <h1><div class="faq_answer_container"><br>
+               <div class="faq_answer">asal ada buli makan sa makan,jangan memilih</div><br><br>
+            </div></h1>
+            <h2><div class="faq_question">Single ka</div></h2>
+            
+            <h1><div class="faq_answer_container"><br>
+               <div class="faq_answer">smpai ke tua huhu</div><br><br>
+            </div></h1>
+            <h2><div class="faq_question">nda bosan ka duduk rumah</div></h2>
+            
+           <h1> <div class="faq_answer_container"><br>
+               <div class="faq_answer">boleh bawa begaduh</div><br><br>
+            </div></h1>
+           <h2> <div class="faq_question">apa la ko buat di rumah</div></h2>
+            
+           <h1> <div class="faq_answer_container"><br>
+               <div class="faq_answer">duduk makan,tidur,tgk youtube,tidur..</div><br><br>
+            </div></h1>
+            <h2><div class="faq_question">minat ka coding</div></h2>
+            
+      <h1><div class="faq_answer_container"><br>
+               <div class="faq_answer">klau kena bayar sa buat ba</div><br><br>
+            </div>   </h1>
+     </div>
+  </div>
+
+</body>
+</html>
